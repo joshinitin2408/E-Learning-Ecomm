@@ -8,20 +8,12 @@ const router = createBrowserRouter([
     path: '/',
     element: <Root />,
     children: [
-      { path: 'email', element: <Email /> },
-      // { path: 'importdata', element: <ImportData /> },
-      // { path: 'dataimport', element: <DataImport /> },
-      // { path: 'users', element: <Users /> },
-      // { path: 'register', element: <Register /> },
+      { path: '', element: <Email /> },
     ],
   },
 ]);
-const App = () => {
-  return (
-    <>
-      <Root />
-    </>
-  )
+function App() {
+  return <RouterProvider router={router} />;
 }
 
-export default App
+export default App;
