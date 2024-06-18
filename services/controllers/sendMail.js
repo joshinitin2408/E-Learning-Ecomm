@@ -1,12 +1,12 @@
 // ./controllers/sendMail.js
 const nodemailer = require("nodemailer");
-
+require('dotenv').config(); // Load environment variables from .env file
 const transporter = nodemailer.createTransport({
     host: 'smtp.ethereal.email',
     port: 587,
     auth: {
-        user: 'candido50@ethereal.email',
-        pass: 'B5cwujta342pfADw22'
+        user: 'mitchell.schoen@ethereal.email',
+        pass: 'QbzzudpRYcNYRuU4yk'
     }
 });
 
